@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import BackgroundImageWithChildren from '../src/components/layout/background-image-with-children/BackgroundImageWithChildren'
+
 const StyledDiv = styled.div`
   text-align: center;
   font-size: 28px;
@@ -7,5 +9,9 @@ const StyledDiv = styled.div`
 `
 
 export default function homePage() {
-  return <StyledDiv>HomePage</StyledDiv>
+  return (
+    <BackgroundImageWithChildren>
+      <StyledDiv>HomePage</StyledDiv>
+    </BackgroundImageWithChildren>
+  )
 }
