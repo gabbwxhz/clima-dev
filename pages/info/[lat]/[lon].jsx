@@ -5,10 +5,11 @@ import { useRouter } from 'next/router'
 import Navbar from '../../../src/components/navbar/Navbar'
 import Container from '../../../src/components/layout/container/Container'
 import ClimaCard from '../../../src/components/clima-card/ClimaCard'
+import Footer from '../../../src/components/footer/Footer'
 
 const Body = styled.div`
   background-color: ${(props) => props.theme.colors.gray};
-  min-height: 100vh;
+  min-height: calc(100vh - 170px);
 `
 
 const Content = styled.div`
@@ -108,6 +109,7 @@ export default function InfoPage() {
           </InfoContainer>
         </Container>
       </Body>
+      <Footer />
     </>
   )
 }
