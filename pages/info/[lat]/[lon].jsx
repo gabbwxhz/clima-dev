@@ -8,12 +8,29 @@ const Body = styled.div`
   min-height: 100vh;
 `
 
+const Content = styled.div`
+  padding: 80px 0;
+`
+
+const Text = styled.p`
+  font-size: 20px;
+`
+
+const CityName = styled.h2`
+  font-size: 60px;
+`
+
 export default function InfoPage() {
   return (
     <>
       <Navbar />
       <Body>
-        <Container>conteúdo</Container>
+        <Container>
+          <Content>
+            <Text>Previsão do tempo para</Text>
+            <CityName>Erechim, RS, Brasil</CityName>
+          </Content>
+        </Container>
       </Body>
     </>
   )
