@@ -66,8 +66,6 @@ export default function InfoPage() {
     }
   }, [lat, lon])
 
-  console.log(currentInfo)
-
   return (
     <>
       <Navbar />
