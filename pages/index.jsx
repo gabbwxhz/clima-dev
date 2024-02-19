@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import Head from 'next/head'
+
 import BackgroundImageWithChildren from '../src/components/layout/background-image-with-children/BackgroundImageWithChildren'
 import Logo from '../src/components/logo/Logo'
 import SearchCity from '../src/components/search-city/SearchCity'
@@ -30,13 +32,22 @@ const InputContainer = styled.div`
 
 export default function homePage() {
   return (
-    <BackgroundImageWithChildren>
-      <StyledDiv>
-        <Logo showImage type="vertical" />
-        <InputContainer>
-          <StyledInput />
-        </InputContainer>
-      </StyledDiv>
-    </BackgroundImageWithChildren>
+    <>
+      <Head>
+        <title>ClimaDEV</title>
+        <meta name="description" content="ClimaDEV" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/woman.svg" />
+      </Head>
+
+      <BackgroundImageWithChildren>
+        <StyledDiv>
+          <Logo showImage type="vertical" />
+          <InputContainer>
+            <StyledInput />
+          </InputContainer>
+        </StyledDiv>
+      </BackgroundImageWithChildren>
+    </>
   )
 }
