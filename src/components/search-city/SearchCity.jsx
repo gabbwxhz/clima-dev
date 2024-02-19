@@ -24,7 +24,7 @@ export default function SearchCity() {
     console.log(list)
     const formattedList = list.map((obj) => ({
       text: `${obj.name}, ${obj.state}, ${obj.country}`,
-      onClick: () => console.log(`LAT: ${obj.lat} LON: ${obj.lon}`)
+      onClick: () => router.push(`/info/${obj.lat}/${obj.lon}`)
     }))
     setSuggestion(formattedList)
   }
