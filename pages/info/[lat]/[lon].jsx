@@ -108,8 +108,8 @@ export default function InfoPage() {
             />
           </InfoContainer>
         </Container>
+        <Footer />
       </Body>
-      <Footer />
     </>
   )
 }
